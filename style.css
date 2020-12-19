@@ -283,6 +283,7 @@ main .links {
     z-index: 4;
     text-align: center;
     width: 100%;
+    line-height: 25px;
 }
 
 main .links a,
@@ -401,7 +402,7 @@ main .vhs h1 {
     }
 }
 
-@media (max-width: 52em) {
+@media (max-width: 72em) {
     main {
         overflow: hidden;
     }
@@ -418,6 +419,8 @@ main .vhs h1 {
     main .vhs .inner .logo {
         position: relative;
         width: 93%;
+        max-width: 300px;
+        margin-top: 10px;
     }
     main .vhs h1 {
         padding: 0;
@@ -425,9 +428,19 @@ main .vhs h1 {
         margin-top: 4px;
         font-size: 14px;
     }
+    main .vhs .orb {
+        position: absolute;
+        text-align: end;
+        top: 0;
+    }
     main .vhs .orb img {
-        max-width: 80px;
-        transform: translateY(-16px);
+        max-width: 50px;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+    main .vhs:hover .orb img {
+        box-shadow: 0 100px 40px rgba(0, 0, 0, 0.4);
+        transform: translateY(-20px) rotateY(0) rotateX(10deg);
     }
     main .vhs .bio {
         padding: 2rem;
