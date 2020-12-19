@@ -1,0 +1,443 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+button,
+hr,
+input {
+    overflow: visible;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}
+
+progress,
+sub,
+sup {
+    vertical-align: baseline;
+}
+
+[type=checkbox],
+[type=radio],
+legend {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+sup {
+    top: -.5em;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img {
+    border-style: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: ButtonText dotted 1px;
+}
+
+fieldset {
+    padding: .35em .75em .625em;
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+ ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+summary {
+    display: list-item;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100%;
+    width: 100%;
+    background: #000 url("images/black-texture.jpg") center center;
+    background-size: 100%;
+    color: #e4e2d7;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.35;
+    overflow: hidden;
+}
+
+.trans {
+    transition: all 4s cubic-bezier(0.3, -0.175, 0.075, 0.99);
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+a,
+a:link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.3, -0.175, 0.075, 0.99);
+    position: relative;
+    z-index: 8;
+    display: inline-block;
+}
+
+a:hover,
+a:link:hover {
+    opacity: 0.6;
+}
+
+.prev {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 1rem;
+}
+
+.prev a {
+    font-weight: normal;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    perspective: 500px;
+    perspective-origin: center center;
+}
+
+main .links {
+    position: absolute;
+    bottom: 0;
+    padding: 4.5rem;
+    z-index: 4;
+    text-align: center;
+    width: 100%;
+}
+
+main .links a,
+main .links a:link {
+    display: inline-block;
+    margin-right: 4rem;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+}
+
+main .vhs {
+    font-family: "Work Sans", sans-serif;
+    background: #000 url("images/desktop-bg.jpg") center center no-repeat;
+    background-size: cover;
+    height: 75vh;
+    max-height: 900px;
+    max-width: 1400px;
+    width: 85%;
+    margin: 0px auto;
+    position: relative;
+    transition: all 4s cubic-bezier(0.3, -0.175, 0.075, 0.99);
+    border-radius: 2px;
+}
+
+main .vhs:hover {
+    transform: rotateY(0) rotatex(4deg) translateY(-30px);
+    box-shadow: 0 70px 100px rgba(0, 0, 0, 0.9);
+}
+
+main .vhs:hover .orb img {
+    box-shadow: 0 100px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-70px);
+}
+
+main .vhs:hover .logo,
+main .vhs:hover h1 {
+    transform: rotateY(0) rotatex(-20deg) translateY(-10px);
+}
+
+main .vhs .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .vhs .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .vhs .inner .space {
+    padding: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .vhs .bio {
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4.5rem;
+}
+
+main .vhs .orb {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+main .vhs .orb img {
+    width: 90%;
+    max-width: 70px;
+    display: inline-block;
+    transition: all 4.5s cubic-bezier(0.3, -0.175, 0.075, 0.99);
+}
+
+main .vhs .logo {
+    z-index: 4;
+    max-width: 430px;
+    width: 35%;
+    position: absolute;
+}
+
+main .vhs h1 {
+    font-weight: normal;
+    color: #f9d918;
+    font-size: 20px;
+    width: 300px;
+    right: 0;
+    padding: 4.5rem;
+    z-index: 4;
+    margin-left: auto;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .vhs:hover {
+        transform: rotateY(0) rotatex(0) translateY(0);
+        box-shadow: 0 70px 100px rgba(0, 0, 0, 0.9);
+    }
+    .vhs:hover .orb img {
+        box-shadow: 0 100px 40px rgba(0, 0, 0, 0.4);
+        transform: translateY(0);
+    }
+    .vhs:hover .logo,
+    .vhs:hover h1 {
+        transform: rotateY(0) rotatex(0) translateY(0);
+    }
+}
+
+@media (max-width: 52em) {
+    main {
+        overflow: hidden;
+    }
+    main .vhs {
+        height: 75vh;
+        width: 94%;
+        border-radius: 13px;
+        margin-bottom: 30px;
+    }
+    main .vhs .inner .space {
+        padding: 2rem;
+        display: block;
+    }
+    main .vhs .inner .logo {
+        position: relative;
+        width: 93%;
+    }
+    main .vhs h1 {
+        padding: 0;
+        margin: 0;
+        margin-top: 4px;
+        font-size: 14px;
+    }
+    main .vhs .orb img {
+        max-width: 80px;
+        transform: translateY(-16px);
+    }
+    main .vhs .bio {
+        padding: 2rem;
+    }
+    main .vhs .links {
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+    main .vhs .links a {
+        font-size: 12px;
+        margin: 0 10px;
+    }
+}
