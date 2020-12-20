@@ -296,6 +296,13 @@ main .links a:link {
     font-family: "Work Sans", sans-serif;
 }
 
+.tab {
+    color: black;
+    background-color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
 main .vhs {
     font-family: "Work Sans", sans-serif;
     background: #000 url("images/desktop-bg.jpg") center center no-repeat;
