@@ -2,10 +2,12 @@
 <html>
 
 <head>
+    <!-- Basic Meta -->
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5,user-scalable=no' id='viewport' name='viewport'>
     <title>Warga Tiga | SMAN 3 Bandung</title>
     <meta content="SMAN 3 Bandung's Civitas Academica (Warga Tiga) Landing Page Website" itemprop='description' name='description'>
+
     <!-- Google / Search Engine Tags -->
     <meta content="Warga Tiga (SMAN 3 Bandung's Civitas Academica)" itemprop='name'>
     <meta content="SMAN 3 Bandung's Civitas Academica Landing Page Website" itemprop='description'>
@@ -15,24 +17,12 @@
     <link href='icons/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
     <link href='icons/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
     <meta content='#000000' name='theme-color'>
-    <link href='style.css' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheet and Script -->
+    <link rel='stylesheet' href='sweetalert2.min.css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-
-    <script>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-7192572-2']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
 </head>
 
 <body>
@@ -40,10 +30,10 @@
         <div class='vhs'>
             <div class='wrapper'>
 
-                <!-- Link SMAN 3 -->
+                <!-- Navigation -->
                 <div class='links'>
-                    <a href='https://url.wargati.ga/how-to' title="Warga Tiga's URL Shortener" class="tab" style="color: #08091B;">
-                        <span class="fas fa-link"></span>&nbsp;&nbsp;URL Shortener
+                    <a title="Warga Tiga's URL Shortener" class="tab popup" style="color: #08091B;">
+                        <span class="fas fa-bars"></span>&nbsp;&nbsp;Menu
                     </a>
                     <a href='https://sman3bandung.sch.id/' title='Website sekolah SMAN 3 Bandung'>
                         SMAN 3 Bandung
@@ -62,6 +52,7 @@
                     </a>
                 </div>
 
+                <!-- Message -->
                 <div class='inner'>
                     <div class='space'>
                         <div class='bio'>
@@ -84,9 +75,18 @@
                     </div>
                 </div>
 
+                <!-- Logo -->
                 <div class='orb'>
                     <img alt='Tiga!' src='images/logo-silver.png'>
                 </div>
+
+                <!-- Summon -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+                <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
+                <script src='https://cdn.jsdelivr.net/npm/promise-polyfill'></script>
+                <script src='sweetalert2.min.js'></script>
+                <script src='sweetalert2.all.min.js'></script>
+                <script src="js/menu.js"></script>
 
             </div>
         </div>
